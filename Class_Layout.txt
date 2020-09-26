@@ -1,0 +1,80 @@
+Student Class
+
+-int ID
+-String Name
+-String BirthDate
+-int grade
+-String Major
+-String typeOfStudent
+-int AmountOfClasses
+
++getID()
++getName()
++getBirthDate()
++getGrade()
++getMajor()
++getTypeOfStudent()
++setTypeOfStudent()
++requestMoreClasses()
+
+--------------------
+Faculty Class
+-boolean Override
+-int ID
+-boolean isPres
+-String Name
+
+-------------------
+
+President Class
++Professor[] profs
+
++changeTuition()
++FireProfessor()
++FireProfessor()
++dropDecision()
++newClass()
++DeleteClass()
++suspendStudent()
++ChangeProfClass()
+
+-------------------
+
+Professor Class 
+-String[] classes
+
++getName()
++changeClass()
++requestDrop()
+------------------
+
+School Class
+-int enrollment
+-int professorCount
+-int classes
+
++setClasses()
++getClasses()
++setProfessorCount()
++getProfessorCount()
++setClasses()
++getClasses()
+
+-------------------
+Classes Class
+-String Professor
+-String className
+-boolean atCap
+-int classSize
+-int tier
+-int cost
+
++getProfessor()
++setProfessor()
++getTier()
++getClassName()
++getClassSize()
++setClassSize()
+
+------------------
+

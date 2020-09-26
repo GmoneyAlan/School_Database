@@ -1,0 +1,32 @@
+Gmoney just made a new school in the pandemic where he wants to make a app, the students can 
+sign up for classes, check the number of students and the name of the professor. The students can
+ also check their grades thru the app. Another feature we want is the student should be able to 
+modify their profile on the app, like classes and sign up for clubs. A student can be suspended, 
+be put on probation, or even kicked out of the school. This can be accomplished by the 
+President or if the professor puts in the request for it. 
+
+A student is considered full-time if they are atleast taking 4 classes, if they are taking less 
+classes than a student is considered part-time. One extra condition I need is the cap for classes 
+is 6 classes for a student. This cap can be overriden if a student puts in a request to be able 
+to take more than six students. The system then goes thru the students history to see if they
+are capable of taking such a class. This type of student is called a super-student.
+
+Now for faculty on this app im gonna need the following, President, and Professor. Both faculty 
+can check each student and their profile. A professor now can put in a request to drop a student
+from their class, this request can only be accepted by the president. The professor can teach a 
+maximum of 3 classes. Their classes are divided into tiers where there are a total of 3 tiers. 
+The importance of a tier is it determines what category the class falls in and it provides a cap
+in students. For example we the following tiers:
+					1.) Basics		CAP: 200 Students
+					2.) Lower Division	CAP: 75  Students
+					3.) High Division	CAP: 30  Students
+
+Finally this database must have chat system. By this I mean the app has a tab where a student, 
+can join a global chat for all the school, a chat for their class, groups made between the 
+groups and 1-1 chats. The student must have the option to be able to disable profanity messages,
+block an individual, and block messages with words of their choosing. 
+
+Extra feature the app must be able to give reminders to a student/faculty on the device.
+
+
+
