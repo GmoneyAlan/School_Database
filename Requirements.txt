@@ -27,6 +27,3 @@ groups and 1-1 chats. The student must have the option to be able to disable pro
 block an individual, and block messages with words of their choosing. 
 
 Extra feature the app must be able to give reminders to a student/faculty on the device.
-
-
-
