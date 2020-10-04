@@ -37,4 +37,13 @@ public class Classroom {
     public void setClassSize(int classSize){
         this.classSize = classSize;
     }
+    
+    public int getcost(){
+        return this.cost;
+    }
+    
+    public void setCost(int Cost){
+        this.cost = cost;
+    }
+
 }
