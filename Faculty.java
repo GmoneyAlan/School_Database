@@ -10,4 +10,8 @@ class Faculty{
         this.isPres = isPres;
         this.name = name;
     }
+
+    public String getName() {
+        return name;
+    }
 }
