@@ -1,7 +1,10 @@
+package University;
+
 public class Student {
     private int id;
     private String name;
     private String dob;
+    public double GPA; //Based out of 4.0
     private int grade;
     private String major;
     private String typeOfStudent;
@@ -40,6 +43,10 @@ public class Student {
         return typeOfStudent;
     }
 
+    public double getGPA(){
+        return GPA;
+    }
+    
     public void setTypeOfStudent(String typeOfStudent) {
         this.typeOfStudent = typeOfStudent;
     }

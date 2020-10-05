@@ -1,3 +1,5 @@
+package University;
+
 class Faculty{
     private boolean override;
     private int id;
