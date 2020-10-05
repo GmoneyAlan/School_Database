@@ -4,9 +4,13 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
-public class App {
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class App implements ActionListener {
 
     private static int HEIGHT = 500;
     private static int WIDTH = 500;
@@ -34,14 +38,24 @@ public class App {
         passLabel.setBounds(75, 175, 80, 25);
         panel.add(passLabel);
         
-        JTextField password = new JTextField("");
+        JPasswordField password = new JPasswordField("");
         password.setBounds(175, 175, 200, 40);
         panel.add(password);
         
         JButton sigInButton = new JButton("Sign in");
         sigInButton.setBounds(200, 250, 100, 40);
+        sigInButton.addActionListener(new App());
         panel.add(sigInButton);
         
+        JLabel test = new JLabel("");
+        test.setBounds(200, 400, 100, 40);
+        
+        
         frame.setVisible(true);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        System.out.println("Testing Sign in button works");
     }
 }
