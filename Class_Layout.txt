@@ -51,7 +51,7 @@ Professor Class
 School Class
 -int enrollment
 -int professorCount
--int classes
+-ArrayList<Classroom> classes
 
 +setClasses()
 +getClasses()
