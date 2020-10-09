@@ -1,6 +1,9 @@
 package App;
 
+import java.awt.Color;
+
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JPanel;
@@ -26,6 +29,7 @@ public class StudentSwing {
         frame.setSize(HEIGHT, WIDTH);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(studentPanel);
+        frame.setBackground(new Color(255, 255, 255));
         
         JMenuBar nav = new JMenuBar();
         
@@ -45,5 +49,23 @@ public class StudentSwing {
         this.frame.setJMenuBar(nav);
         
         this.frame.setVisible(true);
+    }
+    
+    public void home(){
+        JLabel classes = new JLabel("Username");
+        classes.setBounds(75,75,80,25);
+        sigInPanel.add(classes);
+        
+        JLabel classes = new JLabel("Username");
+        classes.setBounds(75,75,80,25);
+        sigInPanel.add(classes);
+        
+        JLabel classes = new JLabel("Username");
+        classes.setBounds(75,75,80,25);
+        sigInPanel.add(classes);
+        
+        JLabel classes = new JLabel("Username");
+        classes.setBounds(75,75,80,25);
+        sigInPanel.add(classes);
     }
 }

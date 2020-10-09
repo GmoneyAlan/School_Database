@@ -1,6 +1,6 @@
 import javax.swing.UIManager;
 
-import App.App;
+import App.*;
 
 public class Test {
     
@@ -11,7 +11,6 @@ public class Test {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        
         */
         App app = new App();
         app.logIn();

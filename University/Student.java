@@ -8,15 +8,15 @@ public class Student {
     private int grade;
     private String major;
     private String typeOfStudent;
-    private int amountOfClasses;
+    private Classroom[] classes;
 
-    Student(int id, String dob, int grade, String major, String typeOfStudent, int amountOfClasses) {
+    Student(int id, String dob, int grade, String major, String typeOfStudent, Classroom[] classes) {
         this.id = id;
         this.dob = dob;
         this.grade = grade;
         this.major = major;
         this.typeOfStudent = typeOfStudent;
-        this.amountOfClasses = amountOfClasses;
+        this.classes = classes;
     }
 
     public int getID() {
@@ -53,7 +53,7 @@ public class Student {
 
     // WIP //
     public void requestMoreClasses() {
-
+        
     }
     
 }
