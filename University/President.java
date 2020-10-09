@@ -1,29 +1,36 @@
 package University;
 
-import java.util.Random;
 import java.util.ArrayList;
 import java.util.Hashtable;
 
 public class President extends Faculty {
-    private Hashtable<String, Professor> professors = new Hashtable<String, Professor>();
-    private Random random = new Random();
+    private Hashtable<Integer, Professor> professors = new Hashtable<Integer, Professor>();
     private int setClassCost = 500;
     
     President(boolean override, int id, boolean isPres, String name){
         super(override, id, isPres, name);
+    }
+    
+    public Hashtable<Integer, Professor> getProfessor(){
+        return professors;
     }
 
     public void changeClassTuition(Classroom classroom, int cost){
         classroom.setCost(cost);
     }
 
-    public void fireProfessor(String name){
-        professors.remove(name);
+    public void fireProfessor(int ID){
+        professors.remove(ID);
     }
 
-    public void hireProfessor(String name){
-        int id = random.nextInt(999999);
-        professors.put(name, new Professor(true, id, false, name));
+    public void hireProfessor(String name, int ID){
+        if(this.professors.size() == 0){
+            professors.put(ID, new Professor(true, ID, false, name));
+            ID++;
+        } else{
+            professors.put(ID, new Professor(true, ID, false, name));
+            ID++;
+        }
     }
 
     public boolean dropDecision(Classroom lecture, Student student){
@@ -52,5 +59,9 @@ public class President extends Faculty {
 
     public void changeProfClass(Classroom lecture, Professor professor){
         lecture.setProfessor(professor);
+    }
+    
+    public void expandStudentSchedule(){
+        
     }
 }
